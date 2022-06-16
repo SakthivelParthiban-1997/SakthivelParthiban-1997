@@ -18,7 +18,6 @@ public static void main(String[] args) {
   // Search the watch:
   webElemnet searchicon=driver.findElement(By.xpath("//*[@id="container"]/div/div[1]/div[1]/div[2]/div[2]/form/div/button/svg").sendkeys("watch");
   //Filter the watch
-   
   Actions act = new Actions(driver);
   //select minimum amount
   WebElement min = driver.findElement(By.xpath("//*[@id="container"]/div/div[3]/div[1]/div[1]/div/div[1]/div/section[2]/div[4]/div[1]/select"));
@@ -30,7 +29,7 @@ public static void main(String[] args) {
   Select mindropdown = new Select(max));  
   mindropdown.selectByIndex(3);  
   //brand search 
-  WebElement brandsearchbar=driver.findElement(By.xpath("//*[@id="container"]/div/div[3]/div[1]/div[1]/div/div[1]/div/section[3]/div[2]/div[1]/div[1]/input").sendkeys("titan");
+  WebElement brandsearchbar=driver.findElement(By.xpath("//[@id="container"]/div/div[3]/div[1]/div[1]/div/div[1]/div/section[3]/div[2]/div[1]/div[1]/input").sendkeys("titan");
   driver.findElement(By.xpath("//*[@id="container"]/div/div[3]/div[1]/div[1]/div/div[1]/div/section[5]/div[2]/div[1]/div[2]/div/label/div[2]")).click();
   //ideal for checkbox
   driver.findElement(By.xpath("//*[@id="container"]/div/div[3]/div[1]/div[1]/div/div[1]/div/section[6]/div[2]/div/div[3]/div/label/div[2]")).click();
